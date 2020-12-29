@@ -11,13 +11,11 @@
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  .modal {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
 }
-
-.backdrop.is-hidden .modal {
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(0.5);
-}
-
 .modal {
   position: absolute;
   left: 50%;
@@ -57,14 +55,13 @@
   background-color: white;
   outline: none;
   cursor: pointer;
-}
 
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
 .icon-btn-close {
   width: 11px;
   height: 11px;
-}
-
-.modal-button:hover,
-.modal-button:focus {
-  fill: var(--accent-color);
 }

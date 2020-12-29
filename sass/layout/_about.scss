@@ -10,21 +10,19 @@
 .about-title-item {
   display: block;
   width: 270px;
-}
-
-.about-title-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.about-title-item::before {
-  display: block;
-  height: 120px;
-  content: '';
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #f5f4fa;
-  border-radius: 4px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &::before {
+    display: block;
+    height: 120px;
+    content: '';
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+  }
 }
 
 .icon-antenna::before {

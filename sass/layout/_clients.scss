@@ -19,16 +19,11 @@
   cursor: pointer;
 }
 
-.clients-list-item:not(:last-child) {
-  margin-right: 30px;
+.clients-list-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-
-.client-link:hover,
-.client-link:focus {
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
-}
-
 .client-link {
   display: inline-block;
   width: 170px;
@@ -38,6 +33,11 @@
   text-align: center;
   padding: 20px 0;
   color: #afb1b8;
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+  }
 }
 
 .client-icon {

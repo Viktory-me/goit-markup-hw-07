@@ -6,10 +6,9 @@
   display: flex;
   align-items: center;
   margin-top: 20px;
-}
-
-.social-link:not(:last-child) {
-  margin-right: 10px;
+  :not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .social-link-item {
@@ -22,11 +21,10 @@
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   background-size: auto;
-}
-
-.social-link-item:hover,
-.social-link-item:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .icon-social {

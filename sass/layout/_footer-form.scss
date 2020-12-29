@@ -71,14 +71,13 @@
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: #ffffff;
-}
-
-.footer-form-btn::after {
-  content: '1';
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  background-image: url('../images/icon_send.svg');
-  fill: white;
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url('../images/icon_send.svg');
+    fill: white;
+  }
 }
